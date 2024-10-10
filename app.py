@@ -18,4 +18,4 @@ with gr.Blocks() as demo:
     submit_btn.click(fn=llama_chatbot, inputs=[image_input, text_input, chatbot], outputs=[chatbot, chatbot])
     clear_btn.click(fn=clear_chat, inputs=None, outputs=chatbot)
 
-demo.launch()
+demo.launch(share=True)
